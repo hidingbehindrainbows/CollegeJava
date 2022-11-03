@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class JavaInput
+{
+   public static void main(String args[])
+   {
+     try (Scanner input = new Scanner(System.in)) 
+     {
+      System.out.println("Enter your int, string, float, double and char ");
+       int x; 
+       x= input.nextInt();
+       String s = input.next();
+       float f = input.nextFloat();
+       double d = input.nextDouble();
+       char c = s.charAt(x);
+       char c1 = input.next().charAt(x);
+       System.out.println("Hello\n" + "x:\t" + x);
+       System.out.println("s:\t" + s);
+       System.out.println("f:\t" + f);
+       System.out.println("d:\t" + d);
+       System.out.println("c:\t" + c);
+       System.out.println("c:\t" + c1);
+     }
+   }
+     
+}
