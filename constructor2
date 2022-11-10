@@ -1,0 +1,16 @@
+class employee
+{
+	employee(String n, int a)
+	{
+		System.out.println("The name is: " + n + "\nTheir age is: " + a);
+	}
+}
+
+
+class JavaInput
+{
+	public static void main(String args[])
+	{
+		employee details = new employee("Vrishank", 19);
+	}
+}
