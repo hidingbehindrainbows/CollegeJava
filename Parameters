@@ -1,0 +1,16 @@
+class Box
+{
+	double volume(double h, double b, double l)
+	{
+		return h*b*l;
+	}
+}
+
+class Parameters
+{
+	public static void main(String args[])
+	{
+		Box one = new Box();
+		System.out.println("The volume is: " +one.volume(50, 80, 90));
+	}
+}
