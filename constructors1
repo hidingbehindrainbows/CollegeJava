@@ -1,0 +1,18 @@
+class Box
+{
+  double average;
+  Box(double m, double p, double c)
+  {
+    double average = (m+ p+c)/3;
+    System.out.println("The average marks is: " +average);
+  }
+}
+
+class constructors
+{
+  public static void main(String args[])
+  {
+    Box First = new Box(99, 99, 69);
+    Box Second = new Box(40, 80, 32);
+  }
+}
