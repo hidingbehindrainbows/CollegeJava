@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class JavaInput
+{
+	public static void main(String args[])
+	{
+		System.out.println("Enter your name and stuff\n");
+		Scanner input = new Scanner(System.in);
+		String name= input.next();
+		String address = input.next();
+		int x;
+		x = input.nextInt();
+		System.out.println("The name is " + name + " and the address is " + address + " and I am " + x + " years old.");
+	}
+}
