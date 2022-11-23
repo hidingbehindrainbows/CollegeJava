@@ -16,7 +16,7 @@ class idk{
     @Override
     public String toString() 
     {
-        return "Book Title:\t"+title +"\nWritten by:\t"+author +"\nCost:\t"+price +"Pages:\t"+num_pages;
+        return "Book Title:\t"+title +"\nWritten by:\t"+author +"\nCost:\t"+price +"\nPages:\t"+num_pages;
     }
 }
 class Author
