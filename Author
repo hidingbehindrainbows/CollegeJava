@@ -1,19 +1,23 @@
 import java.util.Scanner;
 
 class idk{
-    String title; String author; int price; int num_pages;
+    String title; 
+    String author; 
+    int price; int num_pages;
     idk()
-    {
-        try (Scanner ss = new Scanner(System.in)) {
+    { 
+		title = new String(); 
+     		author = new String(); 
+       	try(Scanner ss = new Scanner(System.in)) { 
             System.out.println("Please enter the name of the book:\t");
             title = ss.next(); 
             System.out.println("Please enter the name of the author:\t");
             author = ss.next();
             System.out.println("What are its prices and number of pages respectively:\t");
             price = ss.nextInt(); num_pages = ss.nextInt();
-        }
-    }
-    @Override
+     }
+	}
+    
     public String toString() 
     {
         return "Book Title:\t"+title +"\nWritten by:\t"+author +"\nCost:\t"+price +"\nPages:\t"+num_pages;
@@ -23,7 +27,21 @@ class Author
 {
     public static void main(String args[])
     {
-        idk one = new idk();
-        System.out.println(one);
+	  System.out.println("How many books do you want to record?");
+	  Scanner two = new Scanner(System.in);
+	  int total = two.nextInt();
+        idk one[] = new idk[total];
+	  for(int i=0;i<total;i++)
+	  {
+	  	one[i] = new idk();
+	  }
+	  System.out.println("Do you want to check the information? [0 to exit]");
+	  if(two.nextInt() != 0)
+	  {
+        	for(int i=0;i<total;i++)
+	  	{
+			System.out.println(one[i]);
+ 		}
+	   }
     }
 }
