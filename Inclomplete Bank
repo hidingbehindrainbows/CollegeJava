@@ -1,0 +1,42 @@
+//class Bank
+//	void savings()
+//	void current()
+
+class Account
+{
+	String customer_name, type;
+	int account_number;
+	Account()
+	{
+		customer_name = new String();
+		type = new String();
+		Scanner one = new Scanner(System.in);
+		System.out.println("Enter your name and the type of account you want to create:");
+		customer_name = one.next();
+		type = one.next();
+		account_number = one.nextInt();
+	}
+}
+
+class Cur-acct extends Account
+{
+	super.Accounts();
+	public int Deposit;
+
+}
+class Sav-acct extends Account
+{
+	super.Accounts();
+}
+
+class Bank
+{
+	public static void main(String args[])
+	{
+		Account acc_info[] = new Account[5];
+		for(i=0;i<5;i++)
+			acc_info[i] = new Account();
+		
+		
+	}
+}
