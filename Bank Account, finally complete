@@ -6,13 +6,13 @@ class Account
     double balance;
     public void deposit(int choice)
     {
-        if(choice == 1)
+        if(choice == 0)
         {
-            type_of_account = "Currency";
+            type_of_account = "Savings";
         }
         else
         {
-            type_of_account = "Savings";
+            type_of_account = "Currency";
         }
         Scanner one = new Scanner(System.in);
         System.out.println("Enter name: ");
@@ -20,7 +20,7 @@ class Account
         System.out.println("Enter acc_no: ");
         acc_no = one.nextInt();
         System.out.println("Enter depositing amount: ");
-        balance = one.nextInt();
+        balance = one.nextDouble();
     }
     public void updateBal()
     {
@@ -111,7 +111,7 @@ class Banking
 {
 	public static void main(String args[])
 	{
-		int choice;
+	  int choice;
         Account Account_obj;
         System.out.println("Please enter the type of account you want. 0 to choose Savings.");
         Scanner type = new Scanner(System.in);
@@ -147,7 +147,7 @@ class Banking
                     break;
                 case 4: System.exit(0);
                     break;
-                default : System.out.println("Invalid, please kill yourself");
+                default : System.out.println("Invalid");
                     break;
             }
         }
