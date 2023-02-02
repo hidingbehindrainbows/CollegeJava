@@ -1,0 +1,6 @@
+package SEE;
+import CIE.Student1;
+
+public class External extends Student1{
+    public int marks[] = new int[5];
+}
